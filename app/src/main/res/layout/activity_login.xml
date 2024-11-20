@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imv_df"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011349"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:minHeight="48dp"
+        android:shadowColor="#0F0E0E"
+        android:text="Logar"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#136EB6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:shadowColor="#0F0E0E"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <Button
+        android:id="@+id/btn_esqueciSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#011349"
+        android:hint="48dp"
+        android:text="Esqueci a senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:shadowColor="#0F0E0E"
+        android:text="VANESSA©"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_esqueciSenha" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="188dp"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:shadowColor="#0F0E0E"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F8F8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:shadowColor="#0F0E0E"
+        android:text="Desenvolvido por FF's Tecnologies"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

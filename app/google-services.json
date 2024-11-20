@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "76652824342",
+    "project_id": "vanessa-29462",
+    "storage_bucket": "vanessa-29462.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76652824342:android:2934954afa1c0122c13237",
+        "android_client_info": {
+          "package_name": "br.unimes.portal.vanessa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDThQwOlxxk1bun8GQ7_XppKIHPZCOCj0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

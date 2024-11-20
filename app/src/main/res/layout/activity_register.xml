@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imv_df"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#011349"
+    tools:context=".Register">
+
+    <ImageButton
+        android:id="@+id/imb_voltar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imb_salvar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/imb_salvar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imb_apagar"
+        app:layout_constraintStart_toEndOf="@+id/imb_voltar"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.54"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <ImageButton
+        android:id="@+id/imb_apagar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="apagar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imb_salvar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="417dp"
+        android:layout_height="521dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="550dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_nome"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nome"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_sobrenome"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Sobrenome"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_cad_email"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:autoLink="email"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="E-mail"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_cad_senha"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Senha"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_tipo"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Tipo (carro, moto, etc)"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_marca"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Marca"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_modelo"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Modelo"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edt_placa"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Placa"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edn_ano"
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ano"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="261dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:minHeight="48dp"
+        android:text="CADASTRO    TODOS OS ITENS SÃO OBRIGATÓRIOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
