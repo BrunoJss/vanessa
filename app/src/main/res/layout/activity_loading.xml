@@ -5,4 +5,47 @@
     android:id="@+id/imv_df"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Loading"/>
+    android:background="@drawable/gradient_background"
+    android:backgroundTint="@color/black"
+    android:backgroundTintMode="add"
+    tools:context=".Loading">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="122dp"
+        android:layout_height="212dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/p_ssaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vanessa_passaro_no_galho" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="261dp"
+        android:layout_height="147dp"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginBottom="264dp"
+        android:contentDescription="@string/logotipo_vanessa"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vanessa_logo_nome" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/logotipo_f_e_f_technologies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fef_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
