@@ -10,4 +10,20 @@
     <string name="veicular_automation">Veicular Automation,</string>
     <string name="and_security_with_arduino">and security with arduino.</string>
     <string name="next_generation_eletronic_systems">next-generation eletronic systems</string>
+    <string name="registre_se_em_va_nes_sa">Registre-se em VA.NES-SA:</string>
+    <string name="p_ssaro_da_logo_de_vanessa">pássaro da logo de vanessa</string>
+    <string name="tipo_de_ve_culo">Tipo de Veículo:</string>
+    <string name="moto">Moto</string>
+    <string name="carro">Carro</string>
+    <string name="voltar">voltar</string>
+    <string name="salvar">salvar</string>
+    <string name="apagar">apagar</string>
+    <string name="ano_de_fabrica_o">Ano de Fabricação</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="placa">Placa</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="marca">Marca:</string>
+    <string name="modelo">Modelo:</string>
 </resources>

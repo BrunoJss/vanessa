@@ -5,189 +5,332 @@
     android:id="@+id/imv_df"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#011349"
+    android:background="@drawable/gradient_background"
     tools:context=".Register">
 
     <ImageButton
         android:id="@+id/imb_voltar"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginStart="48dp"
-        android:backgroundTint="#FFFFFF"
-        android:contentDescription="voltar"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/black"
+        android:contentDescription="@string/voltar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imb_salvar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imb_salvar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="@color/white" />
 
     <ImageButton
         android:id="@+id/imb_salvar"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:backgroundTint="#FFFFFF"
-        android:contentDescription="salvar"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/black"
+        android:contentDescription="@string/salvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imb_apagar"
         app:layout_constraintStart_toEndOf="@+id/imb_voltar"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="0.54"
-        app:srcCompat="@android:drawable/ic_menu_save" />
+        app:srcCompat="@android:drawable/ic_menu_save"
+        app:tint="@color/white" />
 
     <ImageButton
         android:id="@+id/imb_apagar"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="52dp"
-        android:backgroundTint="#FFFFFF"
-        android:contentDescription="apagar"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:background="@color/black"
+        android:contentDescription="@string/apagar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imb_salvar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
+        app:layout_constraintStart_toEndOf="@+id/imb_salvar"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:tint="@color/white" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="417dp"
-        android:layout_height="521dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="411dp"
+        android:layout_height="482dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#FFFFFF"
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/txv_registrese_register">
 
         <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="550dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:foregroundGravity="center"
             android:gravity="center"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edt_nome"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginVertical="10dp"
+                android:autofillHints="firstName"
+                android:ellipsize="end"
                 android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
-                android:hint="Nome"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                android:hint="@string/nome"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapWords"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:minLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="TextContrastCheck" />
 
             <EditText
                 android:id="@+id/edt_sobrenome"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginVertical="10dp"
+                android:autofillHints="familyName"
+                android:ellipsize="end"
                 android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
-                android:hint="Sobrenome"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                android:hint="@string/sobrenome"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapWords"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:minLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
 
             <EditText
                 android:id="@+id/edt_cad_email"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginVertical="10dp"
                 android:autoLink="email"
+                android:autofillHints="emailAddress"
+                android:ellipsize="end"
                 android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
-                android:hint="E-mail"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                android:hint="@string/e_mail"
+                android:imeOptions="actionNext"
+                android:inputType="text|textEmailAddress"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:minLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="TextContrastCheck" />
 
             <EditText
                 android:id="@+id/edt_cad_senha"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginVertical="10dp"
+                android:autofillHints="password"
+                android:ellipsize="end"
                 android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
-                android:hint="Senha"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                android:hint="@string/senha"
+                android:imeOptions="actionNext"
+                android:inputType="text|textPassword"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:minLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                tools:ignore="TextContrastCheck" />
 
-            <EditText
-                android:id="@+id/edt_tipo"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="10dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Tipo (carro, moto, etc)"
-                android:inputType="text"
-                android:minHeight="48dp" />
+            <RadioGroup
+                android:id="@+id/rdg_tipoveiculo_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/edt_marca"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="10dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Marca"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                <TextView
+                    android:id="@+id/txv_tipoveiculo_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/tipo_de_ve_culo"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/edt_modelo"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="10dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Modelo"
-                android:inputType="text"
-                android:minHeight="48dp" />
+                <RadioButton
+                    android:id="@+id/rdb_carro_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:text="@string/carro"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rdb_moto_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:gravity="center"
+                    android:hint="@string/moto"
+                    android:text="@string/moto"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txv_marcatexto_register"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/marca"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_marca_register"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp"
+                        android:background="#00FFFFFF"
+                        android:foregroundGravity="center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txv_modelotexto_register"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/modelo"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_modelo_register"
+                        android:layout_width="310dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/edt_placa"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginVertical="10dp"
+                android:autofillHints=""
                 android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
-                android:hint="Placa"
+                android:hint="@string/placa"
+                android:imeOptions="actionNext"
                 android:inputType="text"
-                android:minHeight="48dp" />
+                android:maxLength="7"
+                android:minHeight="48dp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="#607D8B"
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck" />
 
             <EditText
-                android:id="@+id/edn_ano"
-                android:layout_width="290dp"
-                android:layout_height="48dp"
+                android:id="@+id/edt_ano"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_marginVertical="10dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/black"
+                android:clickable="true"
                 android:ems="10"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
-                android:hint="Ano"
-                android:inputType="number"
-                android:minHeight="48dp" />
+                android:hint="@string/ano_de_fabrica_o"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B4FFFFFF" />
 
         </LinearLayout>
     </ScrollView>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="261dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/txv_registrese_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/montserrat_medium"
         android:minHeight="48dp"
-        android:text="CADASTRO    TODOS OS ITENS SÃO OBRIGATÓRIOS"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="@string/registre_se_em_va_nes_sa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imv_passaro_register"
+        android:layout_width="290dp"
+        android:layout_height="420dp"
+        android:alpha="0.2"
+        android:contentDescription="@string/p_ssaro_da_logo_de_vanessa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vanessa_passaro_no_galho"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
