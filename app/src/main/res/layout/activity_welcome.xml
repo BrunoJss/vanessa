@@ -5,53 +5,118 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".Welcome">
 
     <ImageView
-        android:id="@+id/imv_vanessa"
-        android:layout_width="104dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/imv_vanessa_welcome"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/logotipo_vanessa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txv_welcome"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vanessa_logo_nome" />
+
+    <Button
+        android:id="@+id/btn_login_welcome"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@color/blue_almostblack"
+        android:contentDescription="@string/vanessa"
+        android:elevation="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:text="@string/j_possuo_login"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_securityarduino_welcome" />
+
+    <Button
+        android:id="@+id/btn_register_welcome"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/blue_almostblack"
+        android:elevation="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:minHeight="48dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:text="@string/quero_me_cadastrar"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_welcome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_feflogo_welcome"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:contentDescription="@string/logotipo_f_e_f_technologies"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_welcome"
+        app:layout_constraintVertical_bias="0.875"
+        app:srcCompat="@drawable/fef_logo" />
 
     <TextView
-        android:id="@+id/txv_welcome"
-        android:layout_width="170dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="72dp"
-        android:minHeight="50dp"
-        android:text="BEM VINDO!"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_welcomelogin"
+        android:id="@+id/txv_veicularautomation_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
-        android:contentDescription="vanessa"
-        android:minHeight="48dp"
-        android:text="Já tenho login"
-        app:layout_constraintEnd_toStartOf="@+id/btn_welcomecad"
-        app:layout_constraintHorizontal_bias="0.595"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/goodtimes"
+        android:text="@string/veicular_automation"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imv_vanessa" />
+        app:layout_constraintTop_toBottomOf="@+id/imv_vanessa_welcome" />
 
-    <Button
-        android:id="@+id/btn_welcomecad"
+    <TextView
+        android:id="@+id/txv_securityarduino_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:minHeight="48dp"
-        android:text="Quero me cadastrar"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/goodtimes"
+        android:text="@string/and_security_with_arduino"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_welcomelogin" />
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_nextgenelecsyst_welcome" />
+
+    <TextView
+        android:id="@+id/txv_nextgenelecsyst_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/goodtimes"
+        android:text="@string/next_generation_eletronic_systems"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_veicularautomation_welcome" />
 </androidx.constraintlayout.widget.ConstraintLayout>

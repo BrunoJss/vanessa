@@ -11,7 +11,7 @@
     tools:context=".Loading">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imv_passaro_loading"
         android:layout_width="122dp"
         android:layout_height="212dp"
         android:layout_gravity="center|top"
@@ -24,19 +24,19 @@
         app:srcCompat="@drawable/vanessa_passaro_no_galho" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imv_vanessa_loading"
         android:layout_width="261dp"
         android:layout_height="147dp"
         android:layout_gravity="center|center_vertical"
         android:layout_marginBottom="264dp"
         android:contentDescription="@string/logotipo_vanessa"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/imv_fef_logotype_loading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/vanessa_logo_nome" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imv_fef_logotype_loading"
         android:layout_width="110dp"
         android:layout_height="82dp"
         android:layout_gravity="bottom|center_horizontal"

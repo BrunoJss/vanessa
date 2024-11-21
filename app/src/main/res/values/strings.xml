@@ -3,4 +3,11 @@
     <string name="p_ssaro">pássaro</string>
     <string name="logotipo_vanessa">logotipo vanessa</string>
     <string name="logotipo_f_e_f_technologies">logotipo f e f technologies</string>
+    <string name="descri_o_do_acr_nimo_vanessa">descrição do acrônimo vanessa</string>
+    <string name="vanessa">vanessa</string>
+    <string name="j_possuo_login">Já possuo login</string>
+    <string name="quero_me_cadastrar">Quero me cadastrar</string>
+    <string name="veicular_automation">Veicular Automation,</string>
+    <string name="and_security_with_arduino">and security with arduino.</string>
+    <string name="next_generation_eletronic_systems">next-generation eletronic systems</string>
 </resources>
